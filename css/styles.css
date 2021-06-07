@@ -18,14 +18,6 @@ p{
     color: var(--text)
 }
 
-html{
-    scroll-behavior: smooth;
-}
-
-.container{
-    overflow-x: hidden;
-    overflow-y: scroll;
-}
 
 
 
@@ -108,7 +100,7 @@ header nav ul li a:hover::after{
 }
 
 .banner .banner_content{
-    max-width: 900px;
+    max-width: 980px;
     text-align: center;
 }
 
@@ -155,14 +147,14 @@ header nav ul li a:hover::after{
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding: 90px 0;
 }
 
 .menu_title{
-    max-width: 700px;
+    max-width: 980px;
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding-top: 90px;
 }
 
 .menu_title h2{
@@ -183,28 +175,22 @@ header nav ul li a:hover::after{
 }
 
 .menu .menu_content {
-    max-width: 1400px;
+    max-width: 1080px;
     display: flex;
-    justify-content: center;
-    flex-direction: row-reverse;
+    justify-content: space-between;
+    flex-direction: row;
     flex-wrap: wrap;
-    margin: 40px auto 0;
+    margin: 20px 0 40px 0;
 }
 
 .menu .menu_box{
-    width: 340px;
-    margin: 20px;
-    background-color: #fff;;
-    border: 15px solid #fff;
+    width: 300px;
+    height: auto;
+    margin: 20px 0;    
     cursor: pointer;
     transition: .6s;
-    margin: 50px;
 }
 
-.menu .menu_box:hover{
-    transform: scale(1.1);
-    box-shadow: 0 0 20px rgba(0,0,0,0.5);
-}
 
 .menu_box .img_box{
     position: relative;
@@ -217,23 +203,33 @@ header nav ul li a:hover::after{
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 300px;
+    height: 300px;
     object-fit: cover;
+    transition: .5s ease;
 }
 
+
 .menu_box .item_text{
-    margin-top: 10px;
     display: flex;
-    justify-content: left;
+    justify-content: center;
     color: var(--brown);
 }
 
 .menu_box .item_text h3{
     font-family: 'Fredoka One';
     text-transform: uppercase;
+    transition: .7s ease;
+    font-size: 1.1rem;
 
 }
+
+.menu_box:hover .img_box img,
+.menu_box:hover .item_text h3{
+    transform: scale(1.03);
+    color: var(--pink);
+}
+
 
 .btn_menu{
     width: 100%;
@@ -247,8 +243,6 @@ header nav ul li a:hover::after{
     background-color: var(--pink);
     display: inline-block;
     padding: 10px 30px;
-    margin-top: 30px;
-    margin-bottom: 100px;
     font-family: 'Fredoka One';
     text-transform: uppercase;
     border-radius: 20px;
@@ -264,18 +258,23 @@ header nav ul li a:hover::after{
 }
 
 /*================//chefs//==============*/
-.chefs{
+.chefs {
     background-color: #e0e0e0;
     width: 100%;
-    height: 90vh;
+    height: auto;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 90px 0;
 }
+
 .chefs_title{
     width: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-bottom: 70px;
 }
 
 .chefs_title h2{
@@ -295,36 +294,45 @@ header nav ul li a:hover::after{
     margin-bottom: 40px;
 }
 
-.chefs_content{
+.chefs_box{
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.chefs_content {
+    max-width: 1080px;
+    height: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 100px;
-
 }
 
-.chefs_box{
+
+
+.chefs_card{
     width: 340px;
-    height: 400px;
+    height: auto;
     background-color: #fff;;
     border: 15px solid #fff;
-    cursor: pointer;
-    transition: transform 2.5s ease;
-    transition: height 1.5s ease;
-    margin-bottom: 80px;
+    transition: .5s ease;
+}
+
+.chefs_card:hover{
+    transform: scale(1.02)
 }
 
 
-
-.chefs_box .chefs_img{
+.chefs_card .chefs_img{
     position: relative;
     width: 100%;
     height: 300px;
 
 }
 
-.chefs_box .chefs_img img{
+.chefs_card .chefs_img img{
     position: absolute;
     top: 0;
     left: 0;
@@ -333,7 +341,7 @@ header nav ul li a:hover::after{
     object-fit: cover;
 }
 
-.chefs_box .chefs_text{
+.chefs_card .chefs_text{
     margin-top: 10px;
     display: flex;
     flex-direction: column;
@@ -341,32 +349,105 @@ header nav ul li a:hover::after{
     color: var(--brown);
 }
 
-.chefs_box .chefs_text h3{
+.chefs_card .chefs_text h3{
     font-family: 'Fredoka One';
     text-transform: uppercase;
     letter-spacing: 1px;
 }
 
-.chefs_box .chefs_text h3 span{
+.chefs_card .chefs_text h3 span{
     color: var(--pink);
 }
 
 
-.chefs_box .chefs_text p{
+.chefs_card .chefs_text p{
     opacity: 1;
     transition: 2.3s ease;
     margin-bottom: 80px;
 }
 
 
+
+
+
+/*================//delivery//==============*/
+
+
+.delivery{
+    width: 100%;
+    height: auto;
+    background-color: #e0e0e0;
+    padding: 0 0 90px 0;
+}
+
+.delivery .delivery_title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.delivery .delivery_title img{
+    width: 450px;   
+    margin-bottom: 50px;
+
+}
+
+.delivery .description_delivery {
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+    align-items: center;
+    text-align: center;
+}
+
+.delivery .description_delivery h3{
+    font-family: 'Fredoka One';
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--grey);
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.delivery .description_delivery p{
+    color: #111;
+
+}
+
+.delivery .delivery_links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.delivery .delivery_links img{
+    width: 150px;
+    margin: 0 30px;
+    height: auto;
+    transition: .5s ease;
+}
+
+.delivery .delivery_links img:hover{
+    transform: scale(1.03);
+}
+
 /*================//depoimentos//==============*/
 
-.depoimentos{
+.depoimentos {
     width: 100%;
-    min-height: 80vh;
-    background-image: url(../assets/bg3.jpg);
+    height: auto;
+    background-image: url(../assets/bg1.jpg);
     background-size: cover;
     position: relative;
+    padding: 90px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .depoimentos_title{
@@ -375,14 +456,13 @@ header nav ul li a:hover::after{
     width: 100%;
     justify-content: center;
     align-items: center;
-    padding: 100px 100px 50px 100px;
 }
 
 .depoimentos_title h2{
     font-size: 3rem;
     font-family: 'Fredoka One';
     letter-spacing: 2px;
-    color: var(--orange);
+    color: #fff;
 }
 
 .depoimentos_title h2 span{
@@ -398,7 +478,6 @@ header nav ul li a:hover::after{
 .depoimentos_content{
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
     flex-direction: row;
     margin-top: 40px;
@@ -408,7 +487,7 @@ header nav ul li a:hover::after{
     width: 340px;
     margin: 0 40px 60px 40px;
     padding: 40px;
-    background-color: #fff;
+    background-color: #e0e0e0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -466,73 +545,12 @@ header nav ul li a:hover::after{
 
 
 
-/*================//delivery//==============*/
-
-
-.delivery{
-    width: 100%;
-    background-color: #e0e0e0;
-}
-
-.delivery .delivery_title{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-top: 150px;
-}
-
-
-
-.delivery .delivery_title img{
-    width: 450px;   
-    margin-bottom: 50px;
-
-}
-
-.delivery .description_delivery {
-    display: flex;
-    flex-direction: column;
-    max-width: 900px;
-    align-items: center;
-    text-align: center;
-}
-
-.delivery .description_delivery h3{
-    font-family: 'Fredoka One';
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: var(--grey);
-    font-size: 1.5rem;
-    margin-bottom: 5px;
-}
-
-.delivery .description_delivery p{
-    color: #111;
-
-}
-
-.delivery .delivery_links{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.delivery .delivery_links img{
-    width: 150px;
-    margin: 0 30px;
-    height: auto;
-    padding-bottom: 100px;
-}
-
-
 /*================//footer//==============*/
 
 footer{
     width: 100%;
     height: auto;
-    background-color: #1a1a1a;
+    background-color: #414446;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -543,7 +561,7 @@ footer{
     
 }
 
-footer div{
+footer .sec{
     width: 25%;
     position: relative;
     margin: 30px 40px;
@@ -566,7 +584,7 @@ footer  h4:before{
     width: 60px;
     height: 4px;
     border-radius: 2px;
-    background-color: var(--pink);
+    background-color: var(--orange);
 }
 
 footer p{
@@ -661,3 +679,15 @@ footer .contatos ul li p{
 footer .contatos ul li p:hover{
     opacity: 1;
 }
+
+footer .copyright{
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #303233;
+    bottom: 0;
+}
+
+footer .copyright p{
