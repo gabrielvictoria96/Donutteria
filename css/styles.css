@@ -28,6 +28,8 @@ html{
 }
 
 
+
+
 /*================//header//==============*/
 header{
     position: fixed;
@@ -41,7 +43,8 @@ header{
     display: flex;
     justify-content: space-around;
     align-items: center;
-
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 header a img{
@@ -93,12 +96,14 @@ header nav ul li a:hover::after{
 .banner{
     position: relative;
     width: 100%;
-    min-height: 80vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     background-image: url(../assets/bg.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     
 }
 
@@ -126,7 +131,7 @@ header nav ul li a:hover::after{
     background-color: var(--pink);
     display: inline-block;
     padding: 10px 30px;
-    margin-top: 20px;
+    margin-top: 100px;
     font-family: 'Fredoka One';
     text-transform: uppercase;
     border-radius: 20px;
@@ -141,76 +146,23 @@ header nav ul li a:hover::after{
     
 }
 
-/*================//about//==============*/
-
-.about{
-    padding: 100px;
-    background-color: #e0e0e0;
-    width: 100%;
-}
-
-.about_row{
-    position: relative;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.about_column{
-    position: relative;
-    width: 48%;
-}
-
-.about_text{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-}
-.about_text h2{
-    color: var(--orange);
-    font-family: 'Fredoka One';
-    margin-bottom: 15px;
-    font-size: 3rem;
-    letter-spacing: 2px;
-}
-
-.about_text h2 span{
-    color: var(--pink);
-    font-family: 'Fredoka One';
-}
-
-.about_text p{
-    font-size: 1rem;
-    color: #111;
-    font-weight: 400;
-}
-
-.about_imgBox {
-    position: relative;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-
-}
-
-.about_imgBox img{
-    width: 70%;
-    object-fit: cover;
-}
-
-
 /*================//menu//==============*/
 
-.menu{
+.menu {
+    display: flex;
     background-color: #e0e0e0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .menu_title{
-    width: 100%;
+    max-width: 700px;
     display: flex;
     align-items: center;
     flex-direction: column;
+    padding-top: 90px;
 }
 
 .menu_title h2{
@@ -227,23 +179,26 @@ header nav ul li a:hover::after{
 .menu_title p {
     font-size: 1rem;
     font-weight: 400;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
-.menu .menu_content{
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 50px;
-    margin: 20px 100px;
+.menu .menu_content {
+    max-width: 1400px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    margin: 40px auto 0;
 }
 
 .menu .menu_box{
     width: 340px;
+    margin: 20px;
     background-color: #fff;;
     border: 15px solid #fff;
     cursor: pointer;
     transition: .6s;
+    margin: 50px;
 }
 
 .menu .menu_box:hover{
@@ -313,6 +268,7 @@ header nav ul li a:hover::after{
     background-color: #e0e0e0;
     width: 100%;
     height: 90vh;
+    position: relative;
 }
 .chefs_title{
     width: 100%;
@@ -359,13 +315,7 @@ header nav ul li a:hover::after{
     margin-bottom: 80px;
 }
 
-.chefs_box:hover{
-    transform: scale(1.001);
-    height: 500px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.5);
-    transition: transform 4s ease;
-    transition: height 3s ease;
-}
+
 
 .chefs_box .chefs_img{
     position: relative;
@@ -403,16 +353,11 @@ header nav ul li a:hover::after{
 
 
 .chefs_box .chefs_text p{
-    opacity: 0;
+    opacity: 1;
     transition: 2.3s ease;
     margin-bottom: 80px;
 }
 
-.chefs_box:hover .chefs_text p{
-    opacity: 1;
-    transition: 1.5s ease;
-    margin-bottom: 80px;
-}
 
 /*================//depoimentos//==============*/
 
@@ -421,6 +366,7 @@ header nav ul li a:hover::after{
     min-height: 80vh;
     background-image: url(../assets/bg3.jpg);
     background-size: cover;
+    position: relative;
 }
 
 .depoimentos_title{
@@ -516,4 +462,202 @@ header nav ul li a:hover::after{
     font-size: 1rem;
     font-family: 'Fredoka One';
     text-transform: uppercase;
+}
+
+
+
+/*================//delivery//==============*/
+
+
+.delivery{
+    width: 100%;
+    background-color: #e0e0e0;
+}
+
+.delivery .delivery_title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 150px;
+}
+
+
+
+.delivery .delivery_title img{
+    width: 450px;   
+    margin-bottom: 50px;
+
+}
+
+.delivery .description_delivery {
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+    align-items: center;
+    text-align: center;
+}
+
+.delivery .description_delivery h3{
+    font-family: 'Fredoka One';
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--grey);
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.delivery .description_delivery p{
+    color: #111;
+
+}
+
+.delivery .delivery_links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.delivery .delivery_links img{
+    width: 150px;
+    margin: 0 30px;
+    height: auto;
+    padding-bottom: 100px;
+}
+
+
+/*================//footer//==============*/
+
+footer{
+    width: 100%;
+    height: auto;
+    background-color: #1a1a1a;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: left;
+    position: relative;
+    overflow-x: hidden;
+    
+}
+
+footer div{
+    width: 25%;
+    position: relative;
+    margin: 30px 40px;
+}
+
+footer h4{
+    position: relative;
+    color: #fff;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+footer  h4:before{
+    position: absolute;
+    content: '';
+    bottom: -3px;
+    left: 0;
+    width: 60px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--pink);
+}
+
+footer p{
+    color: #fff;
+    opacity: .4;
+    font-size: 14px;
+}
+
+footer .sobre ul{
+    display: flex;
+    justify-content: left;
+    list-style: none;
+}
+
+footer .sobre ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 40px;
+    min-height: 40px;
+    margin: 20px 20px 0 0;
+    background: rgb(43, 43, 43);
+    border-radius: 50%;
+    transition: .6s linear;
+    cursor: pointer;
+
+}
+
+footer .sobre ul li a{
+    color: #fff;
+    font-size: 1rem;
+}
+
+footer .sobre ul li:hover{
+    background-color: var(--orange);
+}
+
+
+footer .links ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    list-style: none;
+    
+}
+
+footer .links ul li{
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+footer .links ul li a{
+    color: #fff;
+    opacity: .4;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Poppins';
+    font-weight: 300;
+    transition: .5s ease;
+}
+
+footer .links ul li a:hover{
+    opacity: 1;
+    
+}
+
+footer .contatos ul{    
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    list-style: none;
+}
+
+footer .contatos ul li{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+footer .contatos ul li i{
+    color:#fff;
+    margin-right: 12px;
+}
+
+footer .contatos ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+footer .contatos ul li p{
+    transition: .5s ease;
+}
+footer .contatos ul li p:hover{
+    opacity: 1;
 }
