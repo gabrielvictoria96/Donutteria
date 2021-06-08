@@ -462,7 +462,7 @@ header nav ul li a:hover::after{
     font-size: 3rem;
     font-family: 'Fredoka One';
     letter-spacing: 2px;
-    color: #fff;
+    color: var(--orange);
 }
 
 .depoimentos_title h2 span{
@@ -686,8 +686,48 @@ footer .copyright{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #303233;
+    background-color: #373a3c;
     bottom: 0;
 }
 
-footer .copyright p{
+
+@media (max-width: 976px){
+    footer .sec{
+        width: 20%;
+    }
+}
+
+@media (max-width: 916px){
+    .menu .menu_content {
+        justify-content: center;        
+    }
+    .menu .menu_box {
+       margin: 10px 25px;    
+    }
+}
+
+@media (max-width: 795px){
+    .banner .banner_content {
+        max-width: 700px;
+    }
+
+    .banner .banner_content p {
+        margin-top: 15px;      
+    }
+
+    .chefs_card {
+        width: 250px;
+    }
+
+    .chefs_card .chefs_text h3 {
+        font-size: 1rem;
+    }
+
+    .chefs_card .chefs_text p {
+        font-size: 1rem;
+    }
+
+    .delivery .description_delivery {
+        width: 700px;
+    }
+}
