@@ -1,0 +1,176 @@
+:root{
+    --pink: #DA1884;
+    --orange: #FF671F;
+    --brown: #653819;
+    --grey: rgb(80, 80, 80);
+    --text: #111;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+p{
+    font-weight: 300;
+    color: var(--text);
+    
+}
+
+body{
+    background-color: #e0e0e0;
+    padding: 0 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin: 30px auto 0 auto;
+    flex-direction: column;
+}
+
+.logo a{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    text-decoration: none;
+   
+}
+
+.logo img{
+    width: 200px;
+}
+
+.logo span{
+    background-color: var(--pink);
+    padding: 0 10px;
+    border: none;
+    border-radius: 20px 0 50px 20px;
+    margin-top: 10px;
+    opacity: 0;
+    transition: 1s ease-in;
+    color: #fff;
+}
+
+.logo a:hover span{
+    opacity: .6;
+}
+
+.wrapper {
+    max-width:700px;
+    width: 100%;
+    height: auto;
+    background-color: #f8f8f8;
+    padding: 30px;
+    margin: 20px auto;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.125);
+}
+
+.wrapper .title{
+    font-size: 1rem;
+    font-family: 'Fredoka One', sans-serif;
+    color: var(--orange);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.wrapper form{
+    width: 100%;
+}
+
+.wrapper form .input_field{
+    margin-bottom: 15px;
+}
+
+.wrapper form .input_field.col{
+    display: flex;
+    flex-direction: column;
+    justify-content:left;
+
+}
+
+
+.wrapper form .input_field label{
+    width: 200px;
+    color: #111;
+    margin-right: 10px;
+    font-size: .9rem;
+    
+}
+
+.wrapper form .input_field input{
+    margin-right: 60px;
+    width: 100%;
+    height: 25px;
+    border: none;
+    background-color: transparent;
+    font-size: 15px;
+    font-weight: 100;
+    border-bottom: 1px solid var(--orange);
+}
+
+.wrapper form .input_field input:focus
+{
+    outline: none;
+}
+
+.wrapper form .input_field.col label {
+    width: 200px;
+    color: #111;
+    margin-right: 10px;
+    font-size: .9rem;
+    margin-bottom: 15px;
+}
+
+.wrapper form .input_field.col textarea{
+    font-size: 1rem;
+    padding: 5px 10px;
+    outline: none;
+}
+
+.wrapper form .input_field.col input{
+    border-bottom: none;
+}
+
+
+.wrapper form .input_field.submit{
+    position: relative;
+    width: 100%;
+    margin: 40px 0 10px 0;
+    border: none;
+    border-radius: 20px;
+}
+
+.wrapper form .input_field.submit input{
+    position: relative;
+    width: 120px;
+    background-color: var(--pink);
+    border: none;
+    border-radius: 20px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: 'Fredoka One';
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: .5s ease;
+    opacity: .8;
+}
+
+.wrapper form .input_field.submit input:hover{
+    letter-spacing: 3px;
+    opacity: 1;
+}
+
+

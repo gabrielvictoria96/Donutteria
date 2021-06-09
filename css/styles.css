@@ -528,7 +528,7 @@ header nav ul li a:hover::after{
 .depoimentos_box .depoimentos_text p{
     color: #111;
     margin-bottom: 20px;
-
+    font-style: italic;
 }
 
 .depoimentos_box.box2 .depoimentos_text p{
