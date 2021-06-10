@@ -49,6 +49,7 @@ header{
     overflow-y: hidden;
 }
 
+
 header a img{
     width: 200px;
     height: 25px;
@@ -63,6 +64,10 @@ header nav ul li{
     list-style: none;
     margin-left: 30px;
     
+}
+
+header nav ul li:first-child{
+    margin-left: 0;
 }
 
 header nav ul li a{
@@ -704,43 +709,3 @@ footer .copyright{
 }
 
 
-@media (max-width: 976px){
-    footer .sec{
-        width: 20%;
-    }
-}
-
-@media (max-width: 916px){
-    .menu .menu_content {
-        justify-content: center;        
-    }
-    .menu .menu_box {
-       margin: 10px 25px;    
-    }
-}
-
-@media (max-width: 795px){
-    .banner .banner_content {
-        max-width: 700px;
-    }
-
-    .banner .banner_content p {
-        margin-top: 15px;      
-    }
-
-    .chefs_card {
-        width: 250px;
-    }
-
-    .chefs_card .chefs_text h3 {
-        font-size: 1rem;
-    }
-
-    .chefs_card .chefs_text p {
-        font-size: 1rem;
-    }
-
-    .delivery .description_delivery {
-        width: 700px;
-    }
-}
