@@ -6,6 +6,16 @@
     --text: #111;
 }
 
+::selection{
+    background: var(--pink);
+}
+
+html {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    
+  }
+
 *{
     margin: 0;
     padding: 0;
@@ -187,7 +197,6 @@ header nav ul li a:hover::after{
     width: 300px;
     height: auto;
     margin: 20px 0;    
-    cursor: pointer;
     transition: .6s;
 }
 
@@ -543,6 +552,10 @@ header nav ul li a:hover::after{
     text-transform: uppercase;
 }
 
+.depoimentos_box .depoimentos_text img{
+    width: 100px;
+    margin-top: 10px;
+}
 
 
 /*================//footer//==============*/

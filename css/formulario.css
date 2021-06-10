@@ -6,6 +6,10 @@
     --text: #111;
 }
 
+::selection{
+    background: var(--pink);
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -19,20 +23,26 @@ p{
     
 }
 
-body{
-    background-color: #e0e0e0;
+.container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../assets/bg3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     padding: 0 10px;
     font-family: 'Poppins', sans-serif;
-}
+    overflow-x: hidden;
 
-.logo{
+}
+.logo {
     position: relative;
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items:center;
-    margin: 30px auto 0 auto;
-    flex-direction: column;
+    align-items: center;
+    margin: 60px auto 60px 0;
 }
 
 .logo a{
@@ -45,26 +55,23 @@ body{
 }
 
 .logo img{
-    width: 200px;
+    width: 250px;
 }
 
 .logo span{
     background-color: var(--pink);
     padding: 0 10px;
     border: none;
-    border-radius: 20px 0 50px 20px;
+    border-radius: 50px 0 100px 50px;
     margin-top: 10px;
-    opacity: 0;
-    transition: 1s ease-in;
+    transition: .3s ease-in;
     color: #fff;
+    font-size: 14px;
 }
 
-.logo a:hover span{
-    opacity: .6;
-}
 
 .wrapper {
-    max-width:700px;
+    max-width: 500px;
     width: 100%;
     height: auto;
     background-color: #f8f8f8;
@@ -74,13 +81,17 @@ body{
 }
 
 .wrapper .title{
-    font-size: 1rem;
-    font-family: 'Fredoka One', sans-serif;
+    font-size: .8rem;
+    font-weight: 100;
     color: var(--orange);
     text-transform: uppercase;
-    letter-spacing: 2px;
-    text-align: center;
+    text-align: left;
     margin-bottom: 25px;
+}
+
+.wrapper .title h2{
+    font-family: 'Fredoka One';
+    letter-spacing: 2px;
 }
 
 .wrapper form{
@@ -101,40 +112,50 @@ body{
 
 .wrapper form .input_field label{
     width: 200px;
-    color: #111;
+    color: var(--grey);
     margin-right: 10px;
     font-size: .9rem;
-    
+    font-weight: 500;
+    opacity: .7;
 }
 
+
+
 .wrapper form .input_field input{
-    margin-right: 60px;
     width: 100%;
-    height: 25px;
     border: none;
     background-color: transparent;
     font-size: 15px;
-    font-weight: 100;
-    border-bottom: 1px solid var(--orange);
+    border-bottom: 1px solid #111;
+    padding: 0 5px 0 5px;
 }
 
-.wrapper form .input_field input:focus
-{
+.wrapper form .input_field input:focus{
     outline: none;
+    border-bottom: 2px solid var(--orange);
 }
 
 .wrapper form .input_field.col label {
     width: 200px;
-    color: #111;
+    color: var(--grey);
     margin-right: 10px;
-    font-size: .9rem;
+    font-size: .8rem;
     margin-bottom: 15px;
+    font-weight: 500;
 }
 
 .wrapper form .input_field.col textarea{
     font-size: 1rem;
+    width: 100%;
     padding: 5px 10px;
     outline: none;
+    border: none;
+    border-bottom: 1px solid #111;
+}
+
+.wrapper form .input_field textarea:focus{
+    outline: none;
+    border-bottom: 2px solid var(--orange);
 }
 
 .wrapper form .input_field.col input{
@@ -152,10 +173,11 @@ body{
 
 .wrapper form .input_field.submit input{
     position: relative;
-    width: 120px;
-    background-color: var(--pink);
+    width: 70%;
+    height: 30px;
+    background-color: var(--orange);
     border: none;
-    border-radius: 20px;
+    border-radius: 2px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -165,12 +187,12 @@ body{
     letter-spacing: 1px;
     cursor: pointer;
     transition: .5s ease;
-    opacity: .8;
+    opacity: 1;
 }
 
 .wrapper form .input_field.submit input:hover{
     letter-spacing: 3px;
-    opacity: 1;
+    opacity: .8;
 }
 
 
