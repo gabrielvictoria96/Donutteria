@@ -16,7 +16,7 @@ hamburger.addEventListener("click", () => {
 });
 
 nav.addEventListener("click", () => {
-    
+
     document.body.style.overflow = show ? "hidden" : "initial"
     menuSection.classList.remove("on", show);
 });

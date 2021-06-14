@@ -93,7 +93,7 @@
     }
 
     .menu_section nav ul li a:after{
-        width: 40px;
+        display: none;
     }
 
 
