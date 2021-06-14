@@ -20,21 +20,32 @@
 
 <body>
     <header>
-            <a href="#banner" class="logo">
-                <img src="../assets/logo.png" alt="logo">
-            </a>
-                <nav>
-                    <ul>
-                        <li><a href="#menu">Menu</a></li>
-                        <li><a href="#chefs">Chef's</a></li>
-                        <li><a href="#delivery">Delivery</a></li>
-                        <li><a href="#depoimentos">Depoimentos</a></li>
-                        <li><a href="#contato">Contato</a></li>
-                    </ul>
-                </nav>
-            </section>
-        
-        
+        <div class="menu_section">
+            <div class="logo_burger">
+                <a href="#banner" class="logo">
+                    <img src="../assets/logo.png" alt="logo">
+                </a>
+                <button class="hamburger" id="hamburger">
+                    <i class="fa fa-bars"></i>
+                    <i class="fas fa-times"></i>
+                </button>    
+
+            </div> 
+            <nav>               
+                
+                <ul class="nav_ul" id="nav_ul">
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#chefs">Chef's</a></li>
+                    <li><a href="#delivery">Delivery</a></li>
+                    <li><a href="#depoimentos">Depoimentos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        </section>
+
+
     </header>
     <main>
         <section class="banner" id="banner">
@@ -170,7 +181,8 @@
                         <img src="../assets/depo1.jpg" alt="Imagem do depoimento 1">
                     </div>
                     <div class="depoimentos_text">
-                        <p>Os Donuts são uma delícia, muito bonitos e fazem sucesso em todas as festas. O local é limpo, agradável e bom atendimento.</p>
+                        <p>Os Donuts são uma delícia, muito bonitos e fazem sucesso em todas as festas. O local é limpo,
+                            agradável e bom atendimento.</p>
                         <h3>Larissa Manoela</h3>
                         <img src="../assets/star.png" alt="Estrelas avaliação">
                     </div>
@@ -180,7 +192,9 @@
                         <img src="../assets/depo2.jpg" alt="Imagem do depoimento 2">
                     </div>
                     <div class="depoimentos_text">
-                        <p>Olha, fazia muito tempo que não comíamos um doce tão bom e gostoso. Pegamos o Pink Donut e o de Nutella e adoramos! Recomendo dar uma parada no local para comer enquanto toma um café que vende lá também.</p>
+                        <p>Olha, fazia muito tempo que não comíamos um doce tão bom e gostoso. Pegamos o Pink Donut e o
+                            de Nutella e adoramos! Recomendo dar uma parada no local para comer enquanto toma um café
+                            que vende lá também.</p>
                         <h3>Tiago Leifert</h3>
                         <img src="../assets/star.png" alt="Estrelas avaliação">
                     </div>
@@ -190,7 +204,8 @@
                         <img src="../assets/depo3.jpg" alt="Imagem do depoimento 3">
                     </div>
                     <div class="depoimentos_text">
-                        <p>Gostamos do ambiente, limpo e arejado, estacionamento seguro e gratuito. O Donut é sensacional, sem palavras. O café  poderia ser um pouquinho maior apenas.</p>
+                        <p>Gostamos do ambiente, limpo e arejado, estacionamento seguro e gratuito. O Donut é
+                            sensacional, sem palavras. O café poderia ser um pouquinho maior apenas.</p>
                         <h3>Ana Maria Braga</h3>
                         <img src="../assets/star.png" alt="Estrelas avaliação">
                     </div>
@@ -249,6 +264,8 @@
         </div>
 
     </footer>
+
+    <script src="../script/script.js"></script>
 </body>
 
 </html>
