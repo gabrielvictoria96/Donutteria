@@ -221,7 +221,7 @@ header .menu_section nav ul li a:hover::after{
 }
 
 .menu .menu_content {
-    max-width: 1080px;
+    max-width: 980px;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -245,11 +245,10 @@ header .menu_section nav ul li a:hover::after{
 }
 
 .menu_box .img_box img{
-    position: absolute;
     top: 0;
     left: 0;
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     object-fit: cover;
     transition: .5s ease;
 }
