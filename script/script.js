@@ -1,22 +1,24 @@
 let show = true;
 
+const container = document.querySelector(".container")
 const menuSection = document.querySelector('.menu_section')
 const hamburger = document.querySelector('.hamburger');
-const nav = document.querySelector(".nav_ul")
+const navLink = document.querySelector("#nav_ul")
+
 
 hamburger.addEventListener("click", () => {
 
-    document.body.style.overflow = show ? "hidden" : "initial"
-    
+    container.style.height = show ? "100vh" : "100%"
 
-    menuSection.classList.toggle("on", show)
+    menuSection.classList.toggle("on", show);
 
     show = !show;
 
 });
 
-nav.addEventListener("click", () => {
+navLink.addEventListener("click", () => {
 
-    document.body.style.overflow = show ? "hidden" : "initial"
     menuSection.classList.remove("on", show);
+    
+    document.body.style.overflow = "initial"
 });

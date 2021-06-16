@@ -46,9 +46,11 @@
         transition: .5s;
     }
 
-    .menu_section.on .fas.fa-times{
+
+    .menu_section.on .fas.fa-times {
         display: block;
-        margin-top: 10px;
+        margin-top: 5px;
+        margin-right: 5px;
         font-size: 30px;
     }
 
@@ -141,7 +143,7 @@
     }
 }
 
-@media (max-width: 695px){
+@media (max-width: 730px){
 
      
 
@@ -185,7 +187,9 @@
  
 
 @media (max-width: 440px){
-
+    body{
+        width: 100vw;
+    }
     header{
         width: 100vw;
     }
