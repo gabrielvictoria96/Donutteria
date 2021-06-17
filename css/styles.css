@@ -375,6 +375,7 @@ header .menu_section nav ul li a:hover::after{
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 25px;
 }
 
 .chefs_title h2{
@@ -522,7 +523,7 @@ header .menu_section nav ul li a:hover::after{
     display: flex;
     justify-content: center;
     align-items: center;
-
+    flex-wrap: wrap;
 }
 
 .delivery .delivery_links img{
