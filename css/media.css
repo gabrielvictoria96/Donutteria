@@ -105,6 +105,9 @@
 }
 
 @media (max-width: 916px){
+    .menu .menu_content{
+        min-height: 1080px;
+    }
     .menu .menu_items {
         justify-content: center;        
     }
@@ -158,6 +161,12 @@
 
     footer .sec {
         width: 90%;
+    }
+}
+
+@media (max-width: 716px){
+    .menu .menu_content{
+        min-height: 1920px;
     }
 }
 
