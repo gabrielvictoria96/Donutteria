@@ -15,257 +15,317 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
         integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/media.css">
+    <link rel="icon" href="../assets/logos/donut--aba.svg"
     <title>Donutteria.</title>
 </head>
 
 <body>
-    <header>
-        <div class="menu_section">
-            <div class="logo_burger">
-                <a href="#banner" class="logo">
-                    <img src="../assets/logo.png" alt="logo">
-                </a>
-                <button class="hamburger" id="hamburger">
-                    <i class="fa fa-bars"></i>
-                    <i class="fas fa-times"></i>
-                </button>    
+    <div class="container">
+        <header id="header">
+            <div class="menu_section">
+                <div class="logo_burger">
+                    <a href="#banner" class="logo">
+                        <img src="../assets/logos/logo.png" alt="logo">
+                    </a>
+                    <button class="hamburger" id="hamburger">
+                        <i class="fa fa-bars"></i>
+                        <i class="fas fa-times"></i>
+                    </button>    
+    
+                </div> 
+                <nav>               
+                    
+                    <ul id="nav_ul">
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#chefs">Chef's</a></li>
+                        <li><a href="#delivery">Delivery</a></li>
+                        <li><a href="#depoimentos">Depoimentos</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section class="banner" id="banner">
+                <div class="banner_content">
+                    <h2>Donut Worry, Be Happy</h2>
+                    <p>Donutteria é uma marca brasileira de donuts artesanais, seguindo os padrões americanos de produção.
+                        Além da fabricação da massa, elaboramos e produzimos os recheios que são de encher os olhos.</p>
+                    <a href="#menu" class="btn">Nosso Menu</a>
+                </div>
+            </section>
+    
+            <section class="menu" id="menu">
+                <div class="menu_title">
+                    <h2>Menu<span>.</span> </h2>
+                    <p>Nossos Donuts são produzidos diariamente com ingredientes de extrema qualidade, seguindo os padrões americanos de produção.</p>
+                </div>
+                <div class="options_btn">
+                    <button id="donuts" class="active">Donuts</button>
+                    <button id="coffee">Cafés</button>
+                </div>
+                <div class="menu_content">
+                    <div class="menu_items donut active">
+                        <div class="menu_box">
+                            <div class="img_box">
+                                <img src="../assets/donuts/item1.png" alt="Donut Nutella">
+                            </div>
+                            <div class="item_text">
+                                <h3>Donut Nutella<span>.</span></h3>
+                            </div>
+                        </div>
+                        <div class="menu_box">
+                            <div class="img_box">
+                                <img src="../assets/donuts/item2.png" alt="Donut Açucar Mascavo">
+                            </div>
+                            <div class="item_text">
+                                <h3>Donut Açucar Mascavo<span>.</span></h3>
+                            </div>
+                        </div>
+                        <div class="menu_box">
+                            <div class="img_box">
+                                <img src="../assets/donuts/item3.png" alt="Pink Donut">
+                            </div>
+                            <div class="item_text">
+                                <h3>Pink Donut<span>.</span></h3>
+                            </div>
+                        </div>
+                        <div class="menu_box">
+                            <div class="img_box">
+                                <img src="../assets/donuts/item4.png" alt="Donut Chocolate Recheado">
+                            </div>
+                            <div class="item_text">
+                                <h3>Donut Chocolate Recheado<span>.</span></h3>
+                            </div>
+                        </div>
+                        <div class="menu_box">
+                            <div class="img_box">
+                                <img src="../assets/donuts/item5.png" alt="Donut Sem Gluten e sem Lactose">
+                            </div>
+                            <div class="item_text">
+                                <h3>Donut sem Gluten/Lactose<span>.</span></h3>
+                            </div>
+                        </div>
+                        <div class="menu_box">
+                            <div class="img_box">
+                                <img src="../assets/donuts/item6.png" alt="Donut Tradicional">
+                            </div>
+                            <div class="item_text">
+                                <h3>Donut Tradicional<span>.</span></h3>
+                            </div>
+                        </div>             
+                    </div>
+                    <div class="menu_items coffee">
+                        <div class="menu_box">
+                            <div class="img_box">
+                                <img src="../assets/cafes/cafe1.png" alt="Donut Nutella">
+                            </div>
+                            <div class="item_text">
+                                <h3>Iced Vanilla<span>.</span></h3>
+                            </div>
+                        </div>
+                        <div class="menu_box">
+                            <div class="img_box">
+                                <img src="../assets/cafes/cafe2.png" alt="Donut Açucar Mascavo">
+                            </div>
+                            <div class="item_text">
+                                <h3>Café Expresso<span>.</span></h3>
+                            </div>
+                        </div>
+                        <div class="menu_box">
+                            <div class="img_box">
+                                <img src="../assets/cafes/cafe3.png" alt="Pink Donut">
+                            </div>
+                            <div class="item_text">
+                                <h3>Frapuccino Chocolate<span>.</span></h3>
+                            </div>
+                        </div>
+                        <div class="menu_box">
+                            <div class="img_box">
+                                <img src="../assets/cafes/cafe4.png" alt="Donut Chocolate Recheado">
+                            </div>
+                            <div class="item_text">
+                                <h3>Cold Brew<span>.</span></h3>
+                            </div>
+                        </div>
+                        <div class="menu_box">
+                            <div class="img_box">
+                                <img src="../assets/cafes/cafe5.png" alt="Donut Sem Gluten e sem Lactose">
+                            </div>
+                            <div class="item_text">
+                                <h3>Sundae Coffee<span>.</span></h3>
+                            </div>
+                        </div>
+                        <div class="menu_box">
+                            <div class="img_box">
+                                <img src="../assets/cafes/cafe6.png" alt="Donut Tradicional">
+                            </div>
+                            <div class="item_text">
+                                <h3>Café Au Lait<span>.</span></h3>
+                            </div>
+                       </div>
+                    
+               </div>
 
-            </div> 
-            <nav>               
-                
-                <ul class="nav_ul" id="nav_ul">
-                    <li><a href="#menu">Menu</a></li>
-                    <li><a href="#chefs">Chef's</a></li>
-                    <li><a href="#delivery">Delivery</a></li>
-                    <li><a href="#depoimentos">Depoimentos</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-            </nav>
-        </div>
+                   
+               
 
-        </section>
-
-
-    </header>
-    <main>
-        <section class="banner" id="banner">
-            <div class="banner_content">
-                <h2>Donut Worry, Be Happy</h2>
+               </div>
+                <div class="btn_menu">
+                    <a href="#" class="btn">Ver Tudo</a>
+                </div>
+    
+            </section>
+    
+            <section class="chefs" id="chefs">
+                <div class="chefs_title">
+                    <h2>Nossos Chef's<span>.</span> </h2>
+                    <p>Nossa cozinha é comandada por duas das Chef's mais renomadas em confeitaria do País.</p>
+                </div>
+    
+    
+                <article class="chefs_content">
+                    <div class="chefs_card">
+                        <div class="chefs_img">
+                            <img src="../assets/fotos/chef1.jpg" alt="Chef Janaina Gomes">
+                        </div>
+                        <div class="chefs_text">
+                            <h3>Chef Janaina Gomes<span>.</span></h3>
+                            <p>Chef francesa do Plaza Athénée em Paris, foi eleita a melhor confeiteira do mundo em 2019 na
+                                lista 50 best. Sua sobremesas com apresentação simples, pouquíssimo açúcar e o uso de
+                                fermentados, vinagre e sal, prezam pelo sabor natural dos alimentos.</p>
+                        </div>
+    
+                    </div>
+                    <div class="chefs_card">
+                        <div class="chefs_img">
+                            <img src="../assets/fotos/chef2.jpg" alt="Chef Valdeth Santos">
+                        </div>
+                        <div class="chefs_text">
+                            <h3>Chef Valdeth Santos<span>.</span></h3>
+                            <p>Esta jovem chef brasileira, formada na França, é um dos grandes destaques no cenário da
+                                Confeitaria Mundial. Viaja o mundo representando a Cacau Barry e o Cook&Chef Institute.</p>
+                        </div>
+    
+                    </div>
+                </article>
+            </section>
+    
+            <section class="delivery" id="delivery">
+                <div class="delivery_title">
+                    <img src="../assets/logos/delivery.png" alt="Logo Donutteria Delivery">
+                    <div class="description_delivery">
+                        <h3>Peça Já</h3>
+                        <p>Bateu a fome no trabalho, em casa ou qualquer lugar? A gente te da o suporte! Baixe e peça pelos
+                            aplicativos parceiros Ifood e Uber Eats.</p>
+                    </div>
+    
+                </div>
+    
+                <div class="delivery_links">
+                    <a href="http://ifood.com" target="_blank"><img src="../assets/logos/ifood-logo.svg" alt="Ifood"></a>
+                    <a href="http://ubereats.com" target="_blank"><img src="../assets/logos/uber-eats--logo.svg" alt="Uber eats"></a>
+                </div>
+            </section>
+    
+            <section class="depoimentos" id="depoimentos">
+                <div class="depoimentos_title">
+                    <h2>Depoimentos<span>.</span></h2>
+                    <p>O que nossos clientes andam falando de nós?</p>
+                </div>
+                <div class="depoimentos_content">
+                    <div class="depoimentos_box">
+                        <div class="depoimentos_imgBox">
+                            <img src="../assets/fotos/depo1.jpg" alt="Imagem do depoimento 1">
+                        </div>
+                        <div class="depoimentos_text">
+                            <p>Os Donuts são uma delícia, muito bonitos e fazem sucesso em todas as festas. O local é limpo,
+                                agradável e bom atendimento.</p>
+                            <h3>Larissa Manoela</h3>
+                            <img src="../assets/star.png" alt="Estrelas avaliação">
+                        </div>
+                    </div>
+                    <div class="depoimentos_box">
+                        <div class="depoimentos_imgBox">
+                            <img src="../assets/fotos/depo2.jpg" alt="Imagem do depoimento 2">
+                        </div>
+                        <div class="depoimentos_text">
+                            <p>Olha, fazia muito tempo que não comíamos um doce tão bom e gostoso. Pegamos o Pink Donut e o
+                                de Nutella e adoramos! Recomendo dar uma parada no local para comer enquanto toma um café
+                                que vende lá também.</p>
+                            <h3>Tiago Leifert</h3>
+                            <img src="../assets/star.png" alt="Estrelas avaliação">
+                        </div>
+                    </div>
+                    <div class="depoimentos_box">
+                        <div class="depoimentos_imgBox">
+                            <img src="../assets/fotos/depo3.jpg" alt="Imagem do depoimento 3">
+                        </div>
+                        <div class="depoimentos_text">
+                            <p>Gostamos do ambiente, limpo e arejado, estacionamento seguro e gratuito. O Donut é
+                                sensacional, sem palavras. O café poderia ser um pouquinho maior apenas.</p>
+                            <h3>Ana Maria Braga</h3>
+                            <img src="../assets/star.png" alt="Estrelas avaliação">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    
+    
+        <footer>
+            <div class="sec sobre">
+                <h4>Sobre Nós</h4>
                 <p>Donutteria é uma marca brasileira de donuts artesanais, seguindo os padrões americanos de produção.
-                    Além da fabricação da massa, elaboramos e produzimos os recheios que são de encher os olhos.</p>
-                <a href="#menu" class="btn">Nosso Menu</a>
+                    Além da fabricação da massa, elaboramos e produzimos os recheios que são de encher os olhos.
+                </p>
+                <ul>
+                    <li><a href="http://instagram.com/gabrielvictoria" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="http://twitter.com/gabrielvic_" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="http://github.com/gabrielvictoria96" target="_blank"><i class="fab fa-github"></i></a></li>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                </ul>
             </div>
-        </section>
-
-        <section class="menu" id="menu">
-            <div class="menu_title">
-                <h2>Menu<span>.</span> </h2>
-                <p>Nossos Donuts são produzidos diariamente com ingredientes de extrema qualidade.</p>
+    
+            <div class="sec links">
+                <h4>Links Úteis</h4>
+                <ul>
+                    <li><a href="formulario.html">Trabalhe Conosco</a></li>
+                    <li><a href="#">Política de Privacidade</a></li>
+                    <li><a href="#">Encontre uma Loja</a></li>
+                    <li><a href="#">Seja Afiliado</a></li>
+                </ul>
             </div>
-            <div class="menu_content">
-                <div class="menu_box">
-                    <div class="img_box">
-                        <img src="../assets/item1.png" alt="Donut 1">
-                    </div>
-                    <div class="item_text">
-                        <h3>Donut Nutella<span>.</span></h3>
-                    </div>
-                </div>
-                <div class="menu_box">
-                    <div class="img_box">
-                        <img src="../assets/item2.png" alt="Donut 2">
-                    </div>
-                    <div class="item_text">
-                        <h3>Donut Açucar Mascavo<span>.</span></h3>
-                    </div>
-                </div>
-                <div class="menu_box">
-                    <div class="img_box">
-                        <img src="../assets/item3.png" alt="Donut 3">
-                    </div>
-                    <div class="item_text">
-                        <h3>Pink Donut<span>.</span></h3>
-                    </div>
-                </div>
-                <div class="menu_box">
-                    <div class="img_box">
-                        <img src="../assets/item4.png" alt="Donut 4">
-                    </div>
-                    <div class="item_text">
-                        <h3>Donut Chocolate Recheado<span>.</span></h3>
-                    </div>
-                </div>
-                <div class="menu_box">
-                    <div class="img_box">
-                        <img src="../assets/item5.png" alt="Donut 5">
-                    </div>
-                    <div class="item_text">
-                        <h3>Donut sem Gluten/Lactose<span>.</span></h3>
-                    </div>
-                </div>
-                <div class="menu_box">
-                    <div class="img_box">
-                        <img src="../assets/item6.png" alt="Donut 6">
-                    </div>
-                    <div class="item_text">
-                        <h3>Donut Tradicional<span>.</span></h3>
-                    </div>
-                </div>
+    
+            <div class="sec contatos" id="contato">
+                <h4>Contatos</h4>
+                <ul>
+    
+                    <li>
+                        <span><i class="fas fa-map-marker-alt"></i></span>
+                        <p><a href="https://goo.gl/maps/hTaejf5n3PAkoRUC8">Rua Fulano de Tal, 269 - Auxiliadora, Porto
+                                Alegre/RS </a></p>
+                    </li>
+                    <li>
+                        <span><i class="fas fa-phone-alt"></i></span>
+                        <p><a href="tel:+5551123456789">(51) 9 1234-5678</a></p>
+                    </li>
+                    <li>
+                        <span><i class="fas fa-envelope"></i></span>
+                        <p><a href="mailto:ninguem@hotmail.com">donutteria@gmail.com</a></p>
+                    </li>
+                </ul>
             </div>
-            <div class="btn_menu">
-                <a href="#" class="btn">Ver Tudo</a>
-            </div>
-
-        </section>
-
-        <section class="chefs" id="chefs">
-            <div class="chefs_title">
-                <h2>Nossos Chef's<span>.</span> </h2>
-                <p>Nossa cozinha é comandada por duas das Chef's mais renomadas em confeitaria do País.</p>
-            </div>
-
-
-            <div class="chefs_content">
-                <div class="chefs_card">
-                    <div class="chefs_img">
-                        <img src="../assets/chef1.jpg" alt="Chef Janaina Gomes">
-                    </div>
-                    <div class="chefs_text">
-                        <h3>Chef Janaina Gomes<span>.</span></h3>
-                        <p>Chef francesa do Plaza Athénée em Paris, foi eleita a melhor confeiteira do mundo em 2019 na
-                            lista 50 best. Sua sobremesas com apresentação simples, pouquíssimo açúcar e o uso de
-                            fermentados, vinagre e sal, prezam pelo sabor natural dos alimentos.</p>
-                    </div>
-
-                </div>
-                <div class="chefs_card">
-                    <div class="chefs_img">
-                        <img src="../assets/chef2.jpg" alt="Chef Valdeth Santos">
-                    </div>
-                    <div class="chefs_text">
-                        <h3>Chef Valdeth Santos<span>.</span></h3>
-                        <p>Esta jovem chef brasileira, formada na França, é um dos grandes destaques no cenário da
-                            Confeitaria Mundial. Viaja o mundo representando a Cacau Barry e o Cook&Chef Institute.</p>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <section class="delivery" id="delivery">
-            <div class="delivery_title">
-                <img src="../assets/delivery.png" alt="Donutteria Delivery">
-                <div class="description_delivery">
-                    <h3>Peça Já</h3>
-                    <p>Bateu a fome no trabalho, em casa ou qualquer lugar? A gente te da o suporte! Baixe e peça pelos
-                        aplicativos parceiros Ifood e Uber Eats.</p>
-                </div>
-
-            </div>
-
-            <div class="delivery_links">
-                <a href="http://ifood.com" target="_blank"><img src="../assets/ifood-logo.svg" alt="Ifood"></a>
-                <a href="http://ubereats.com" target="_blank"><img src="../assets/uber-eats-seeklogo.com.svg"
-                        alt="Uber eats"></a>
-            </div>
-        </section>
-
-        <section class="depoimentos" id="depoimentos">
-            <div class="depoimentos_title">
-                <h2>Depoimentos<span>.</span></h2>
-                <p>O que nossos clientes andam falando de nós?</p>
-            </div>
-            <div class="depoimentos_content">
-                <div class="depoimentos_box">
-                    <div class="depoimentos_imgBox">
-                        <img src="../assets/depo1.jpg" alt="Imagem do depoimento 1">
-                    </div>
-                    <div class="depoimentos_text">
-                        <p>Os Donuts são uma delícia, muito bonitos e fazem sucesso em todas as festas. O local é limpo,
-                            agradável e bom atendimento.</p>
-                        <h3>Larissa Manoela</h3>
-                        <img src="../assets/star.png" alt="Estrelas avaliação">
-                    </div>
-                </div>
-                <div class="depoimentos_box">
-                    <div class="depoimentos_imgBox">
-                        <img src="../assets/depo2.jpg" alt="Imagem do depoimento 2">
-                    </div>
-                    <div class="depoimentos_text">
-                        <p>Olha, fazia muito tempo que não comíamos um doce tão bom e gostoso. Pegamos o Pink Donut e o
-                            de Nutella e adoramos! Recomendo dar uma parada no local para comer enquanto toma um café
-                            que vende lá também.</p>
-                        <h3>Tiago Leifert</h3>
-                        <img src="../assets/star.png" alt="Estrelas avaliação">
-                    </div>
-                </div>
-                <div class="depoimentos_box">
-                    <div class="depoimentos_imgBox">
-                        <img src="../assets/depo3.jpg" alt="Imagem do depoimento 3">
-                    </div>
-                    <div class="depoimentos_text">
-                        <p>Gostamos do ambiente, limpo e arejado, estacionamento seguro e gratuito. O Donut é
-                            sensacional, sem palavras. O café poderia ser um pouquinho maior apenas.</p>
-                        <h3>Ana Maria Braga</h3>
-                        <img src="../assets/star.png" alt="Estrelas avaliação">
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-
-    <footer>
-        <div class="sec sobre">
-            <h4>Sobre Nós</h4>
-            <p>Donutteria é uma marca brasileira de donuts artesanais, seguindo os padrões americanos de produção.
-                Além da fabricação da massa, elaboramos e produzimos os recheios que são de encher os olhos.
-            </p>
-            <ul>
-                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fab fa-github"></i></a></li>
-                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-            </ul>
-        </div>
-
-        <div class="sec links">
-            <h4>Links Úteis</h4>
-            <ul>
-                <li><a href="formulario.html">Trabalhe Conosco</a></li>
-                <li><a href="#">Política de Privacidade</a></li>
-                <li><a href="#">Encontre uma Loja</a></li>
-                <li><a href="#">Seja Afiliado</a></li>
-            </ul>
-        </div>
-
-        <div class="sec contatos" id="contato">
-            <h4>Contatos</h4>
-            <ul>
-
-                <li>
-                    <span><i class="fas fa-map-marker-alt"></i></span>
-                    <p><a href="https://goo.gl/maps/hTaejf5n3PAkoRUC8">Rua Fulano de Tal, 269 - Auxiliadora, Porto
-                            Alegre/RS </a></p>
-                </li>
-                <li>
-                    <span><i class="fas fa-phone-alt"></i></span>
-                    <p><a href="tel:+5551123456789">(51) 9 1234-5678</a></p>
-                </li>
-                <li>
-                    <span><i class="fas fa-envelope"></i></span>
-                    <p><a href="mailto:ninguem@hotmail.com">donutteria@gmail.com</a></p>
-                </li>
-            </ul>
-        </div>
-
-        <div class="copyright">
-            <p>Copyright (c) 2021 Gabriel Victoria</p>
-        </div>
-
-    </footer>
-
-    <script src="../script/script.js"></script>
+    
+            <aside class="copyright">
+                <p>Copyright (c) 2021 Gabriel Victoria</p>
+            </aside>
+    
+        </footer>
+    
+        <script src="../script/script.js"></script>
+    </div>
+    
 </body>
 
 </html>

@@ -27,7 +27,7 @@ p{
     position: relative;
     width: 100%;
     height: 100vh;
-    background-image: url(../assets/bg3.jpg);
+    background-image: url(../assets/backgrounds/bg3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -139,7 +139,7 @@ p{
     width: 200px;
     color: var(--grey);
     margin-right: 10px;
-    font-size: .8rem;
+    font-size: .9rem;
     margin-bottom: 15px;
     font-weight: 500;
 }
