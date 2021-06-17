@@ -50,7 +50,7 @@ header{
     align-items: center;
     overflow-x: hidden;
     overflow-y: hidden;
-    z-index: 10;
+    z-index: 9999;
 }
 
 header .menu_section{
@@ -141,7 +141,7 @@ header .menu_section nav ul li a:hover::after{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(../assets/bg.jpg);
+    background-image: url(../assets/backgrounds/bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -196,6 +196,9 @@ header .menu_section nav ul li a:hover::after{
     align-items: center;
     text-align: center;
     padding: 90px 0;
+    position: relative;
+    width: 100%;
+    height: auto;
 }
 
 .menu_title{
@@ -222,14 +225,61 @@ header .menu_section nav ul li a:hover::after{
     margin-bottom: 20px;
 }
 
+.options_btn{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.options_btn button{
+    border: none;
+    margin: 30px 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all ease 0.5s;
+    background-color: var(--pink);
+    padding: 5px 50px;
+    border-radius: 20px;
+    font-size: 18px;
+    font-family: 'Fredoka One';
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.options_btn .active{
+    background-color: var(--orange);
+}
+.options_btn button:hover{
+    transform: scale(1.05);
+}
+
+
 .menu .menu_content {
+    width: 100%;
     max-width: 980px;
+    height: 780px;
+    position: relative;
+
+}
+
+.menu_content .menu_items {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 20px 0 40px 0;
+    margin: 50px 0 40px 0;
+    background-color: #e2e2e2;
+    line-height: 15px;
+    opacity: 0;
+    position: absolute;
+    transition: all ease .5s;
 }
+
+.menu_content .menu_items.active{
+    opacity: 1;
+}
+
 
 .menu .menu_box{
     width: 300px;
@@ -243,6 +293,7 @@ header .menu_section nav ul li a:hover::after{
     position: relative;
     width: 100%;
     height: 250px;
+    margin-bottom: 15px;
 
 }
 
@@ -251,7 +302,7 @@ header .menu_section nav ul li a:hover::after{
     left: 0;
     width: 250px;
     height: 250px;
-    object-fit: cover;
+    object-fit: contain;
     transition: .5s ease;
 }
 
@@ -270,8 +321,8 @@ header .menu_section nav ul li a:hover::after{
 
 }
 
-.menu_box:hover .img_box img,
-.menu_box:hover .item_text h3{
+.menu_items .menu_box:hover .img_box img,
+.menu_items .menu_box:hover .item_text h3{
     transform: scale(1.03);
     color: var(--pink);
 }
