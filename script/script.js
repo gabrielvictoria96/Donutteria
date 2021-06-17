@@ -33,6 +33,8 @@ donuts.addEventListener("click", () => {
     menuItemCoffee.classList.remove("active");
     donuts.classList.add("active");
     coffee.classList.remove("active");
+    menuItemDonut.style.zIndex = "10"
+    menuItemCoffee.style.zIndex = "0"
 });
 
 coffee.addEventListener("click", () =>{
@@ -41,4 +43,6 @@ coffee.addEventListener("click", () =>{
     menuItemCoffee.classList.add("active");
     donuts.classList.remove("active");
     coffee.classList.add("active");
+    menuItemDonut.style.zIndex = "0"
+    menuItemCoffee.style.zIndex = "10"
 })
