@@ -645,7 +645,7 @@ header .menu_section nav ul li a:hover::after{
     font-style: italic;
 }
 
-.depoimentos_box .depoimentos_text h3{
+.depoimentos_box .depoimentos_text cite{
     color: var(--pink);
     font-size: 1rem;
     font-family: 'Fredoka One';
