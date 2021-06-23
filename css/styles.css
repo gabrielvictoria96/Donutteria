@@ -161,9 +161,10 @@ header .menu_section nav ul li a:hover::after{
 }
 
 .banner .banner_content p{
-    font-size: 1rem;
-    margin-top: 5px;
+    font-size: 1.125rem;
+    margin-top: 10px;
     color: #fff;
+    letter-spacing: 1px;
 }
 
 .banner .btn{
@@ -202,7 +203,7 @@ header .menu_section nav ul li a:hover::after{
 }
 
 .menu_title{
-    max-width: 980px;
+    max-width: 1080px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -210,7 +211,7 @@ header .menu_section nav ul li a:hover::after{
 
 .menu_title h2{
     color: var(--orange);
-    font-size: 3rem;
+    font-size: 3.125rem;
     font-family: 'Fredoka One';
     letter-spacing: 2px;
 }
@@ -223,6 +224,8 @@ header .menu_section nav ul li a:hover::after{
     font-size: 1rem;
     font-weight: 400;
     margin-bottom: 20px;
+    color: var(--text);
+    letter-spacing: 0.5px;
 }
 
 .options_btn{
@@ -256,7 +259,7 @@ header .menu_section nav ul li a:hover::after{
 
 .menu .menu_content {
     width: 100%;
-    max-width: 980px;
+    max-width: 1080px;
     height: 780px;
     position: relative;
 
@@ -395,9 +398,10 @@ header .menu_section nav ul li a:hover::after{
 }
 
 .chefs_title p {
-    font-size: 1rem;
+    font-size: 1.125rem;
     font-weight: 400;
     margin-bottom: 40px;
+    letter-spacing: 0.5px;
 }
 
 .chefs_box{
@@ -497,7 +501,7 @@ header .menu_section nav ul li a:hover::after{
 
 
 .delivery .delivery_title img{
-    width: 450px;   
+    width: 400px;   
     margin-bottom: 50px;
 
 }
@@ -515,12 +519,13 @@ header .menu_section nav ul li a:hover::after{
     text-transform: uppercase;
     letter-spacing: 2px;
     color: var(--grey);
-    font-size: 1.5rem;
-    margin-bottom: 5px;
+    font-size: 2rem;
+    margin-bottom: 10px;
 }
 
 .delivery .description_delivery p{
     color: #111;
+    font-size: 1.125rem;
 
 }
 
