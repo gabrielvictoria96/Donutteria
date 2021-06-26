@@ -1,14 +1,20 @@
 let show = true;
 
-const container = document.querySelector(".container")
-const menuSection = document.querySelector('.menu_section')
+const container = document.querySelector(".container");
+const menuSection = document.querySelector('.menu_section');
 const hamburger = document.querySelector('.hamburger');
-const navLink = document.querySelector("#nav_ul")
-const coffee = document.getElementById("coffee")
-const donuts = document.getElementById("donuts")
-const menuItemDonut = document.querySelector(".menu_items.donut")
-const menuItemCoffee = document.querySelector(".menu_items.coffee")
+const navLink = document.querySelector("#nav_ul");
+const coffee = document.getElementById("coffee");
+const donuts = document.getElementById("donuts");
+const menuItemDonut = document.querySelector(".menu_items.donut");
+const menuItemCoffee = document.querySelector(".menu_items.coffee");
 
+
+window.addEventListener('scroll', () => {
+    const scroll = document.querySelector(".pageUp");
+
+    scroll.classList.toggle("scrolled", window.scrollY > 200);
+})
 
 hamburger.addEventListener("click", () => {
 
