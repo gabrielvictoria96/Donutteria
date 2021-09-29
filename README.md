@@ -7,4 +7,4 @@
 *  CSS
 *  JavaScript
 
-### Resultado em: (https://gabrielvictoria96.github.io/Projeto-Final-DIW/html/)
+<a href="https://gabrielvictoria96.github.io/Projeto-Final-DIW/html/" target="_blank">Resultado Aqui.</a>
