@@ -7,4 +7,4 @@
 *  CSS
 *  JavaScript
 
-<a href="https://gabrielvictoria96.github.io/Projeto-Final-DIW/html/" target="_blank">Resultado Aqui.</a>
+<a href="https://gabrielvictoria96.github.io/Donutteria/html/" target="_blank">Resultado Aqui.</a>
